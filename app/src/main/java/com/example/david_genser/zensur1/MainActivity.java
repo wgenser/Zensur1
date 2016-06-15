@@ -29,5 +29,44 @@ public class MainActivity extends AppCompatActivity {
         //Button-Variablen erzeugen
         Button OkButton = (Button) findViewById(R.id.button);
 
+        // Buttons und Methoden verknÃ¼pfen
+        OkButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Zahl Ã¼bernehmen
+
+                String Txt = Eingabe1.getText().toString();
+
+                                // Zahl auswerten
+                try {
+                    int Zensur = Integer.valueOf(Txt);
+                    switch (Zensur) {
+                        case 1:
+                            Anzeige1.setText(R.string.Sehr_gut);
+                            break;
+                        case 2:
+                            Anzeige1.setText(R.string.Gut);
+                            break;
+                        case 3:
+                            Anzeige1.setText(R.string.Befriedigend);
+                            break;
+                        case 4:
+                            Anzeige1.setText(R.string.Ausreichend);
+                            break;
+                        case 5:
+                            Anzeige1.setText(R.string.Mangelhaft);
+                            break;
+                        case 6:
+                            Anzeige1.setText(R.string.Ungenuegend);
+                            break;
+                        default:
+                            Anzeige1.setText(R.string.Unsinn);
+                    }
+                }catch (Exception e) {
+                    Anzeige1.setText(R.string.Unsinn);
+                }
+                            }
+        });
+
     }
 }

@@ -1,5 +1,14 @@
 <resources>
-    <string name="app_name">Zensur1</string>
-    <string name="Eingabe">Bitte Noten eingeben:</string>
+    <string name="app_name">Zensur</string>
+    <string name="Eingabe">Gib deine Zensur ein:</string>
+    <string name="action_settings">Settings</string>
     <string name="OK">OK</string>
+    <string name="Sehr_gut">Sehr gut</string>
+    <string name="Gut">Gut</string>
+    <string name="Befriedigend">Befriedigend</string>
+    <string name="Ausreichend">Ausreichend</string>
+    <string name="Mangelhaft">Mangelhaft</string>
+    <string name="Ungenuegend">Ungenügend</string>
+    <string name="Unsinn">Unsinn</string>
+    <string name="Default"></string>
 </resources>
