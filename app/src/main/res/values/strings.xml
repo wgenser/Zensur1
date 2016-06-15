@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Zensur1</string>
     <string name="Eingabe">Bitte Noten eingeben:</string>
+    <string name="OK">OK</string>
 </resources>
